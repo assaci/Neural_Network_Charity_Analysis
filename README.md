@@ -11,13 +11,14 @@ The purpose of this project is to analyze 34,000 organizations that have receive
 
 ## Results 
 
-###Preprocessing Data for a Neural Network Model
+### Data Processing
+We first examine the data to identify the variables that are considered to be the target, features or should be removed from the dataset for our model.
+The charity dataset contains information on EIN(Enployee Identifier), NAME, APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,SPECIAL_CONSIDERATIONS, STATUS, and ASK_AMT.
 
-- variable(s) are considered the target(s) for the model : IS_SUCCESSFUL
-- variable(s) are considered the feature(s) for the model : all variables except EIN and NAME
-- variable(s) should be removed for your model: EIN and NAME
+- The variable(s) considered as a target for our model is "IS-SUCCESSFUL" coulumn. It's the most important variable in the dataset as it determines the effectiveness of the fundings. 
+- The variable(s) considered as features for our model are APPLICATION, TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,SPECIAL_CONSIDERATIONS, STATUS, and ASK_AMT.
+-The variable(s) considered to be removed are the "EIN" and "NAME" columnsas they are not relevant for our model and can create confusion.   
  
-
 
 ### Compile, Train, and Evaluate the Model
 
