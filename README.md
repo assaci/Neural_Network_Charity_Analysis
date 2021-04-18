@@ -15,13 +15,15 @@ The purpose of this project is to analyze 34,000 organizations that have receive
 We first examine the data to identify the variables that are considered to be the target, features or should be removed from the dataset for our model.
 The charity dataset contains information on EIN(Enployee Identifier), NAME, APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,SPECIAL_CONSIDERATIONS, STATUS, and ASK_AMT.
 
-- The variable(s) considered as a target for our model is "IS-SUCCESSFUL" coulumn. It's the most important variable in the dataset as it determines the effectiveness of the fundings. 
-- The variable(s) considered as features for our model are APPLICATION, TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,SPECIAL_CONSIDERATIONS, STATUS, and ASK_AMT.
-- The variable(s) considered to be removed are the "EIN" and "NAME" columns as they are not relevant for our model and can create confusion.   
+- The variable(s) that are considered as to be target for our model is "IS-SUCCESSFUL" coulumn. It's the most important variable in the dataset as it determines the effectiveness of the fundings. 
+- The variable(s) cthat are considered as to be features for our model are APPLICATION, TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,SPECIAL_CONSIDERATIONS, STATUS, and ASK_AMT.
+- The variable(s) are neither targets nor features, and should be removed from the input data are the "EIN" and "NAME" columns as they are not relevant for our model and can create confusion.   
  
 
 ### Compile, Train, and Evaluate the Model
-
+- How many neurons, layers, and activation functions did you select for your neural network model, and why?
+- Were you able to achieve the target model performance?
+- What steps did you take to try and increase model performance?
 
 ### Optimize the Model
 
