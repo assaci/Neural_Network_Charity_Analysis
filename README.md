@@ -17,7 +17,7 @@ The charity dataset contains information on EIN(Enployee Identifier), NAME, APPL
 
 - The variable(s) considered as a target for our model is "IS-SUCCESSFUL" coulumn. It's the most important variable in the dataset as it determines the effectiveness of the fundings. 
 - The variable(s) considered as features for our model are APPLICATION, TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,SPECIAL_CONSIDERATIONS, STATUS, and ASK_AMT.
--The variable(s) considered to be removed are the "EIN" and "NAME" columnsas they are not relevant for our model and can create confusion.   
+- The variable(s) considered to be removed are the "EIN" and "NAME" columns as they are not relevant for our model and can create confusion.   
  
 
 ### Compile, Train, and Evaluate the Model
