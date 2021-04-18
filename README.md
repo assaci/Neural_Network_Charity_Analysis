@@ -12,19 +12,30 @@ The purpose of this project is to analyze 34,000 organizations that have receive
 ## Results 
 
 ### Data Processing
-We first examine the data to identify the variables that are considered to be the target, features or should be removed from the dataset for our model.
+We first examine the data to identify the variables that are considered to be the target, features or are neither targets nor features, and should be removed from the input data for our model.
 The charity dataset contains information on EIN(Enployee Identifier), NAME, APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,SPECIAL_CONSIDERATIONS, STATUS, and ASK_AMT.
-
 - The variable(s) that are considered as to be target for our model is "IS-SUCCESSFUL" coulumn. It's the most important variable in the dataset as it determines the effectiveness of the fundings. 
 - The variable(s) cthat are considered as to be features for our model are APPLICATION, TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,SPECIAL_CONSIDERATIONS, STATUS, and ASK_AMT.
-- The variable(s) are neither targets nor features, and should be removed from the input data are the "EIN" and "NAME" columns as they are not relevant for our model and can create confusion.   
+- The variable(s) are neither targets nor features, and should be removed from the input data are the "EIN", "AFFILIATION","STATUS" columns as they are not relevant for our model and can create confusion.   
  
 
 ### Compile, Train, and Evaluate the Model
 - How many neurons, layers, and activation functions did you select for your neural network model, and why?
-- Were you able to achieve the target model performance?
-- What steps did you take to try and increase model performance?
+There are 2 hidden layers in our model. The first hidden layer has 100 neurons and the second has 50 neurons. The activation function used for both layers is "relu" and the output layer activation function is "sigmoid".
+I selected these layers because they seem to increase the accuracy.
 
-### Optimize the Model
+- Were you able to achieve the target model performance?
+Yes, I was able to to achieve the target model performance. 
+
+- What steps did you take to try and increase model performance?
+I first dropped columns "EIN" and "NAME" then set 4 different hidden layers to 80, 30, 20, and 10  neurons but I noticed  I was getting less than 53% accuracy.
+To increase the model performance, I added back the column "NAME" then removed "EIN", "AFFILIATION", "STATUS" columns. I decrease the number of hidden layers and increase the neurons. I was able to increase the accuracy from 53% to 76%. 
 
 ## Summary 
+Our model ended up reaching 76% accuracy. Based on our analysis we can conclude that an applicant has a 76% of chance of being successful if they have: 
+- Their NAME appears more than 5 times.
+- Their APPLICATION_type is one of the following; T3, T4, T5, T6, T7, T8, T10, and T19
+- The application has the following CLASSIFICATION; C1000, C2000, C3000, C1200, and C2100.
+Even if we reached more than 75% accuracy, we could get a much more significant accuracy rate by having more data for our model  
+
+
