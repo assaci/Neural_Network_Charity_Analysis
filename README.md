@@ -48,5 +48,6 @@ Our model ended up reaching 76% accuracy. The focus o the study was to predict w
 - Their NAME appears more than 5 times.
 - Their APPLICATION_type is one of the following; T3, T4, T5, T6, T7, T8, T10, and T19
 - The application has the following CLASSIFICATION; C1000, C2000, C3000, C1200, and C2100.
+
 Even if we reached more than 75% accuracy, we could get a much higher accuracy rate by having more data for our model.  
 
