@@ -18,6 +18,7 @@ The charity dataset contains information on EIN(Enployee Identifier), NAME, APPL
 - The variable(s) cthat are considered as to be features for our model are APPLICATION, TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,SPECIAL_CONSIDERATIONS, STATUS, and ASK_AMT.
 - The variable(s) are neither targets nor features, and should be removed from the input data are the "EIN", "AFFILIATION","STATUS" columns as they are not relevant for our model and can create confusion.   
  
+ ![preprocessed](https://github.com/assaci/Neural_Network_Charity_Analysis/blob/main/preprocessed.PNG?raw=true)
 
 ### Compile, Train, and Evaluate the Model
 - How many neurons, layers, and activation functions did you select for your neural network model, and why?
@@ -30,6 +31,10 @@ Yes, I was able to to achieve the target model performance.
 - What steps did you take to try and increase model performance?
 I first dropped columns "EIN" and "NAME" then set 4 different hidden layers to 80, 30, 20, and 10  neurons but I noticed  I was getting less than 53% accuracy.
 To increase the model performance, I added back the column "NAME" then removed "EIN", "AFFILIATION", "STATUS" columns. I decrease the number of hidden layers and increase the neurons. I was able to increase the accuracy from 53% to 76%. 
+
+ ![layers](https://github.com/assaci/Neural_Network_Charity_Analysis/blob/main/layers.PNG?raw=true)
+ 
+  ![Accuracy](https://github.com/assaci/Neural_Network_Charity_Analysis/blob/main/Accuracy.PNG?raw=true)
 
 ## Summary 
 Our model ended up reaching 76% accuracy. Based on our analysis we can conclude that an applicant has a 76% of chance of being successful if they have: 
