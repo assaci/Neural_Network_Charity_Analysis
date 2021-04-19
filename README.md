@@ -18,6 +18,12 @@ The charity dataset contains information on EIN(Enployee Identifier), NAME, APPL
 - The variable(s) cthat are considered as to be features for our model are APPLICATION, TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,SPECIAL_CONSIDERATIONS, STATUS, and ASK_AMT.
 - The variable(s) are neither targets nor features, and should be removed from the input data are the "EIN", "AFFILIATION","STATUS" columns as they are not relevant for our model and can create confusion.   
  
+ ![name](https://github.com/assaci/Neural_Network_Charity_Analysis/blob/main/name.PNG?raw=true)
+  
+ ![app_type](https://github.com/assaci/Neural_Network_Charity_Analysis/blob/main/app_type.PNG?raw=true)
+  
+ ![class](https://github.com/assaci/Neural_Network_Charity_Analysis/blob/main/class.PNG?raw=true)
+ 
  ![preprocessed](https://github.com/assaci/Neural_Network_Charity_Analysis/blob/main/preprocessed.PNG?raw=true)
 
 ### Compile, Train, and Evaluate the Model
@@ -37,10 +43,10 @@ To increase the model performance, I added back the column "NAME" then removed "
   ![Accuracy](https://github.com/assaci/Neural_Network_Charity_Analysis/blob/main/Accuracy.PNG?raw=true)
 
 ## Summary 
-Our model ended up reaching 76% accuracy. Based on our analysis we can conclude that an applicant has a 76% of chance of being successful if they have: 
+
+Our model ended up reaching 76% accuracy. The focus o the study was to predict whether applicants will be successful if funded by Alphabet SoupBased. We had a dataset that contained information from 34,000 organizations that have received funding from Alphabet Soup. We examined the dataset, narrowed down the columns for cleaning selected the target and features that were relevant for our model. Base on our analysis, we determined that 3 futeares were significant for the prediction: Name, Application_type, and Classification. In conclusion, any applicant who has the following characteristics will have a 76% of chance of being successful with Alphabet Soup fundings:
 - Their NAME appears more than 5 times.
 - Their APPLICATION_type is one of the following; T3, T4, T5, T6, T7, T8, T10, and T19
 - The application has the following CLASSIFICATION; C1000, C2000, C3000, C1200, and C2100.
-Even if we reached more than 75% accuracy, we could get a much more significant accuracy rate by having more data for our model  
-
+Even if we reached more than 75% accuracy, we could get a much higher accuracy rate by having more data for our model.  
 
